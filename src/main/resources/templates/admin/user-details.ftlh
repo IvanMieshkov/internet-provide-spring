@@ -12,10 +12,6 @@
 <div class="container">
     <div class="row">
         <h2 class="text"><@spring.message "title.main.menu"/></h2>
-        <#--        <form class="form-inline ml-auto my-2 my-lg-0"-->
-        <#--              action="/api/candidate/edit/${user.getId()}" method="get">-->
-        <#--            <button class="btn btn-primary " type="submit"><@spring.message "profile.edit.edit_profile"/></button>-->
-        <#--        </form>-->
 
         <table class="table table-bordered success">
             <thead>
@@ -99,7 +95,6 @@
 
             </table>
         </div>
-
 
     </div>
 </div>

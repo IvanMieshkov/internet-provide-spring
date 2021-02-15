@@ -69,23 +69,7 @@
             </#list>
             </tbody>
         </table>
-
-
     </div>
-
-
-    <#--    <div class="col-md-6 offset-md-4">-->
-    <#--        <#if isAdmin>-->
-    <#--            <a href="/admin/tariff-create/${service}" class="btn btn-link">-->
-    <#--                <@spring.message "button.add.tariff"/>-->
-    <#--            </a>-->
-    <#--        </#if>-->
-    <#--        <a href="/pdf/${service}" class="btn btn-link">-->
-    <#--            <button class="btn btn-primary btn-xs" type="submit"><@spring.message "button.pdf"/></button>-->
-    <#--        </a>-->
-    <#--
-    <#--    </div>-->
-
     <div class="row">
         <div class="col-sm">
             <#if isAdmin>

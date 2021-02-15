@@ -36,17 +36,11 @@
                                     <input type="password" id="password" class="form-control" name="password" placeholder="<@spring.message "field.user.password"/>" required >
                                 </div>
                             </div>
-
-
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     <@spring.message "button.sign-in"/>
                                 </button>
-<#--                                <a href="/registration" class="btn btn-link">-->
-<#--                                    <@spring.message "title.registration"/>-->
-<#--                                </a>-->
                             </div>
-
                         </form>
                     </div>
                 </div>

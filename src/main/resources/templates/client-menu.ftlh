@@ -16,10 +16,6 @@
         <#else>
             <h2 class="text"><@spring.message "title.main.menu"/></h2>
         </#if>
-        <#--        <form class="form-inline ml-auto my-2 my-lg-0"-->
-        <#--              action="/api/candidate/edit/${user.getId()}" method="get">-->
-        <#--            <button class="btn btn-primary " type="submit"><@spring.message "profile.edit.edit_profile"/></button>-->
-        <#--        </form>-->
 
         <table class="table table-bordered success">
             <thead>

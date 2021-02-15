@@ -14,10 +14,6 @@
 <div class="container">
     <div class="row">
         <h2 class="text"><@spring.message "title.main.menu"/></h2>
-        <#--        <form class="form-inline ml-auto my-2 my-lg-0"-->
-        <#--              action="/api/candidate/edit/${user.getId()}" method="get">-->
-        <#--            <button class="btn btn-primary " type="submit"><@spring.message "profile.edit.edit_profile"/></button>-->
-        <#--        </form>-->
 
         <table class="table table-bordered success">
             <thead>
@@ -63,33 +59,6 @@
                 <@spring.message "title.registration"/>
             </a>
         </div>
-
-<#--        <div class="row">-->
-<#--            <h3 class="text"><@spring.message "field.user.tariffs"/></h3>-->
-<#--            <table class="table table-bordered success">-->
-<#--                <tbody>-->
-<#--                <#list tariffs as tariff>-->
-<#--                    <tr>-->
-<#--                        <th>-->
-<#--                            <#if tariff.service=='internet'><@spring.message "navbar.internet"/></#if>-->
-<#--                            <#if tariff.service=='tv'><@spring.message "navbar.tv"/></#if>-->
-<#--                            <#if tariff.service=='telephony'><@spring.message "navbar.telephony"/></#if>-->
-<#--                        </th>-->
-
-<#--                        <td>-->
-<#--                            <#if springMacroRequestContext.getLocale().toString()?contains("en")>-->
-<#--                                ${tariff.nameEn}-->
-<#--                            <#else>-->
-<#--                                ${tariff.nameUkr}-->
-<#--                            </#if>-->
-<#--                        </td>-->
-<#--                    </tr>-->
-<#--                </#list>-->
-<#--                </tbody>-->
-
-<#--            </table>-->
-<#--        </div>-->
-
         <a class="text-center"><@pagination.pagination "menu" page/></a>
     </div>
 </div>

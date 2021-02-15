@@ -18,11 +18,7 @@
                     <div class="card-header"><@spring.message "button.edit.tariff"/></div>
 
                     <div class="card-body">
-<#--                        <@error.error/>-->
-                        <form action="/admin/tariff-edit/${tariff.id}" method="POST"
-<#--                              enctype="multipart/form-data"-->
-                        >
-
+                        <form action="/admin/tariff-edit/${tariff.id}" method="POST">
                             <div class="form-group row">
                                 <input type="text" id="nameEn" class="form-control" name="nameEn" placeholder="${tariff.nameEn}">
                             </div>
@@ -34,39 +30,6 @@
                             <div class="form-group row">
                                 <input type="number" id="price" class="form-control" name="price" placeholder="${tariff.price}">
                             </div>
-
-
-
-
-<#--                            <div class="form-group row">-->
-<#--                                <label for="nameUkr" class="col-md-4 col-form-label text-md-right"><@spring.message "title.tariff.name.ukr"/></label>-->
-<#--                                <div class="col-md-6">-->
-<#--                                    <input type="text"-->
-<#--                                           class="form-control ${(nameUkrError??)?string('is-invalid', '')}"-->
-<#--                                           value="<#if tariffDTO??>${tariffDTO.nameUkr}</#if>" name="nameUkr"/>-->
-<#--                                    <#if nameUkrError??>-->
-<#--                                        <div class="invalid-feedback">-->
-<#--                                            ${nameUkrError}-->
-<#--                                        </div>-->
-<#--                                    </#if>-->
-<#--                                </div>-->
-<#--                            </div>-->
-
-<#--                            <div class="form-group row">-->
-<#--                                <label for="phone" class="col-md-4 col-form-label text-md-right"><@spring.message "title.tariff.price"/> </label>-->
-<#--                                <div class="col-md-6">-->
-<#--                                    <input type="text" id="price"-->
-<#--                                           class="form-control ${(priceError??)?string('is-invalid', '')}"-->
-<#--                                           name="price"-->
-<#--                                           value="<#if tariffDTO??>${tariffDTO.price}</#if>"/>-->
-<#--                                    <#if priceError??>-->
-<#--                                        <div class="invalid-feedback">-->
-<#--                                            ${priceError}-->
-<#--                                        </div>-->
-<#--                                    </#if>-->
-<#--                                </div>-->
-<#--                            </div>-->
-
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     <@spring.message "button.save"/>
