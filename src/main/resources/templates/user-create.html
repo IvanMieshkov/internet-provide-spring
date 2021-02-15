@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+
+
+<form action="#" th:action="@{/user-create}" th:object="${user}" method="post">
+    <label for="nameEn">Name in English</label>
+    <input type="text" th:field="*{nameEn}" id="nameEn" placeholder="Name in English">
+    <br/>
+    <label for="nameUkr">Name in Ukrainian</label>
+    <input type="text" th:field="*{nameUkr}" id="nameUkr" placeholder="Name in Ukrainian">
+    <br/>
+    <label for="password">Password</label>
+    <input type="text" th:field="*{password}" id="password" placeholder="Password">
+    <br/>
+    <label for="email">Email</label>
+    <input type="text" th:field="*{email}" id="email" placeholder="Email">
+    <br>
+    <label for="address">Address</label>
+    <input type="text" th:field="*{address}" id="address" placeholder="Address">
+    <br/>
+    <label for="phone">Phone</label>
+    <input type="text" th:field="*{phone}" id="phone" placeholder="Phone">
+    <br/>
+    <label for="role">Role</label>
+    <input type="text" th:field="*{role}" id="role" placeholder="Role">
+    <br/>
+
+    <input type="submit" value="Create User">
+</form>
+
+
+</body>
+</html>
