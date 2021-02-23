@@ -50,9 +50,9 @@
             <tr>
                 <th class="info"><@spring.message "field.user.balance"/></th>
                 <#if user.getBalance()<0>
-                    <td style="color: crimson">${user.getBalance()} <@spring.message "currency"/></td>
+                    <td style="color: crimson">${user.getBalance()?string(",##0.00")} <@spring.message "currency"/></td>
                 <#else>
-                    <td>${user.getBalance()} <@spring.message "currency"/></td>
+                    <td>${user.getBalance()?string(",##0.00")} <@spring.message "currency"/></td>
                 </#if>
             </tr>
             <tr>
@@ -68,7 +68,7 @@
                     <form class="form-inline ml-auto my-2 my-lg-0"
                           action="/client/payment/" method="post">
                         <th>
-                            <input type="number" id="payment" class="form-control" name="payment" placeholder="<@spring.message "field.user.payment"/>" required >
+                            <input type="number" step="0.01" id="payment" class="form-control" name="payment" placeholder="<@spring.message "field.user.payment"/>" required >
                         </th>
                         <td>
                             <button class="btn btn-primary " type="submit"><@spring.message "field.user.pay"/></button>
